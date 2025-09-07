@@ -13,5 +13,5 @@ public interface BikeService {
     Bike findById(int id);
     Bike deleteById(int id);
     List<Bike> findAll();
-
+    List<Bike> findAllBikeByBrand(String brand);
 }

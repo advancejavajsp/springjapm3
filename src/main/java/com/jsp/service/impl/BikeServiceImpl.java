@@ -51,8 +51,10 @@ public class BikeServiceImpl implements BikeService {
         return bikeRepository.findAll();
     }
 
-
-
+    @Override
+    public List<Bike> findAllBikeByBrand(String brand) {
+        return bikeRepository.findByBrand(brand);
+    }
 
 
 }
